@@ -1,0 +1,85 @@
+% !TEX program = xelatex
+\documentclass{article}
+
+%% ---- ตั้งค่าให้ตัดคำภาษาไทย ---- %%
+\XeTeXlinebreaklocale "th"
+\XeTeXlinebreakskip = 0pt plus 0pt % เพิ่มความกว้างเว้นวรรคให้ความยาวแต่ละบรรทัดเท่ากัน
+
+
+%% ---- font settings ---- %%
+\usepackage{fontspec} % For Thai font
+\defaultfontfeatures{Mapping=tex-text} % map LaTeX formating, e.g., ``'', to match the current font
+% To change the main font, uncomment one of the below command.
+% \setmainfont{TeX Gyre Termes} % Free Times
+% \setsansfont{TeX Gyre Heros} % Free Helvetica
+% \setmonofont{TeX Gyre Cursor} % Free Courier
+\newfontfamily{\thaifont}[Scale=MatchUppercase,Mapping=textext]{Laksaman} % ตั้งฟอนต์หลักภาษาไทย
+\newenvironment{thailang}{\thaifont}{} % create environment for Thai language
+\usepackage[Latin,Thai]{ucharclasses} % ตั้งค่าให้ใช้ "thailang" environment เฉพาะ string ที่เป็น Unicode ภาษาไทย
+\setTransitionTo{Thai}{\begin{thailang}}
+
+\setTransitionFrom{Thai}{\end{thailang}}
+
+%% ---- spacing between lines ---- %%
+\usepackage{setspace}
+% \singlespacing % default setting
+% \onehalfspacing % recommend using this for Thai language
+
+%% ---- using alphabatic language ---- %%
+\usepackage{polyglossia}
+\setdefaultlanguage{english} % it is preferrable to set English as the main language, since the numeric system is compatible with most LaTeX features such as 'enumerate' and so on
+\setotherlanguages{thai}
+
+\AtBeginDocument\captionsthai % allow captions to be in Thai
+
+
+%% ---- hyperref settings ---- %%
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+    }
+
+%% ---- misc. packages ---- %%
+\usepackage{metalogo} % for extended LaTeX logo such as XeTeX
+
+%% ==== Title, Auth, Date ==== %%
+\title{Thai \XeTeX ~Template \thanks{Thanks \href{https://github.com/mathmd/polygloTeX}{mathmd's Github repo} for nice polyglot template.}}
+\author{Kittipos Sirivongrungson }
+\date{January 2021}
+
+%%%%%%%%%%%%%%%% Begin Document %%%%%%%%%%%%%%%% 
+\begin{document}
+\sloppy % ช่วยตัดคำภาษาไทย
+\maketitle
+\begin{abstract}
+	This document use \texttt{fontspec}, \texttt{polyglossia} and \texttt{ucharclasses} packages to provide typesetting in Thai.
+	ฟอนต์ภาษาไทย \textenglish{\texttt{Laksaman}} เป็นของโครงการ \textenglish{TLWG (Thai Linux Working Group)} ที่มีความคล้ายกับ \textenglish{\texttt{TH SarabunPSK}} ที่ใช้สำหรับการจัดทำเอกสารใน MS Word	
+\end{abstract}
+
+\section{Alphabatic languages}
+Alphabatic scripts, e.g., Thai, Devanagari, Arabic, Cyrillic, etc., can be used simultaneously by using \texttt{polyglossia} package.
+To ease writing experience, \texttt{ucharclasses} package can be used to automate the language environment switching while the main language remains English.
+
+
+\subsection{ภาษาไทย}
+\subsubsection{With onehalf spacing}
+
+\begin{onehalfspace}
+	เนื่องจากว่าใช้แพ็คเกจ \texttt{ucharclasses} เราจึงไม่จำเป็นต้องเรียก environment ภาษาไทยทุกครั้ง ทำให้สามารถใช้หลายภาษาพร้อมกันได้โดยสะดวก
+	ในย่อหน้าที่\textbf{ภาษาไทย}เป็นหลักควรตั้งระยะห่างระหว่างบรรทัดด้วยคำสั่ง \texttt{\textbackslash onehalfspacing} หรือเรียก environment ชื่อ \texttt{onehalfspace}
+\end{onehalfspace}
+
+\subsubsection{Without onehalf spacing}
+    เนื่องจากว่าใช้แพ็คเกจ \texttt{ucharclasses} เราจึงไม่จำเป็นต้องเรียก environment ภาษาไทยทุกครั้ง ทำให้สามารถใช้หลายภาษาพร้อมกันได้โดยสะดวก
+    ในย่อหน้าที่\textbf{ภาษาไทย}เป็นหลักควรตั้งระยะห่างระหว่างบรรทัดด้วยคำสั่ง \texttt{\textbackslash onehalfspacing} หรือเรียก environment ชื่อ \texttt{onehalfspace}
+
+
+
+
+\end{document}
