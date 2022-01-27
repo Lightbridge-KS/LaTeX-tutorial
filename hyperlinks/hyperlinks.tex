@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{book}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\title{Example of Hyperlinks}
+\author{Overleaf}
+
+\begin{document}
+
+% \maketitle
+
+\frontmatter
+\tableofcontents
+\clearpage
+
+\addcontentsline{toc}{chapter}{Foreword}
+{\huge {\bf Foreword}}
+
+\Blindtext
+\clearpage
+
+\addcontentsline{toc}{chapter}{Dummy entry}
+{\huge {\bf Dummy entry}}
+
+\Blindtext
+\mainmatter
+
+\chapter{First Chapter}
+
+This will be an empty chapter
+
+\begin{equation}
+\label{eq:1}
+\sum_{i=0}^{\infty} a_i x^i
+\end{equation}
+
+The equation \ref{eq:1} shows a sum that is divergent. This formula will be used later on page \pageref{second}.
+
+\Blindtext
+\clearpage
+
+\section{Second section} \label{second}
+
+\blindtext
+\Blinddocument
+\end{document}

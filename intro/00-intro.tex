@@ -1,8 +1,14 @@
-%%%% Preamble
+%%%%%%%%%%%%%%%%%% Preamble
 \documentclass[12pt, letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} % For Pictures
 \usepackage{hyperref} % Links
+% Link Color Setup
+\hypersetup{
+    pdftitle={LaTeX Tutorial},
+    colorlinks=true,
+    linkcolor=blue
+    }
 
 \graphicspath{ {../image} } % Set Image folder paths
 
@@ -10,7 +16,7 @@
 \author{Kittipos Sirivongrungson }
 \date{January 2021}
 
-%%%% Body
+%%%%%%%%%%%%%%%%%% Body
 \begin{document}
 
 % Add `title` `author` `date` to the docs 
@@ -61,6 +67,16 @@ Some of the \textbf{greatest} discovery in the \textit{science} were made by \te
 \end{enumerate}
 
 \section{Math Stuff}
+
+\section{Links}
+It's also possible to link directly any word 
+or \hyperlink{thesentence}{any sentence} in you document.
+
+If you read this text, you will get no information.  Really?  
+Is there no information?
+
+For instance \hypertarget{thesentence}{this sentence}.
+
 \subsection{Inline Mode}
 The mass-energy equivalence is stated by the equation $E=mc^2$.
 
