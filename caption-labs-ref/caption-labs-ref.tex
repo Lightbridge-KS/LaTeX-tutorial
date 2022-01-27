@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {../image} }
+ 
+\begin{document}
+
+Images can be captioned, labelled and referenced by means of the figure environment as shown below:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+    \caption{a nice plot}
+    \label{fig:mesh1}
+\end{figure}
+ 
+As you can see in the figure \ref{fig:mesh1}, the 
+function grows near 0. Also, in the page \pageref{fig:mesh1} 
+is the same example.
+
+\end{document}
