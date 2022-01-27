@@ -1,5 +1,7 @@
 # My LaTeX Tutorial
 
+> This is my own LaTeX reference.
+
 Each directory contains minimal example for each lesson.
 
 See `intro/`: combination of everything
@@ -11,3 +13,8 @@ See `intro/`: combination of everything
 - `caption-labs-ref/`: how to add caption & labels to image. 
 - `hyperlinks/`: Linking Stuff
 
+### Reference
+
+I learned most of these stuff from: 
+
+- [Overleaf Tutorial](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
