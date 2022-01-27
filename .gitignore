@@ -1,5 +1,5 @@
 # Latex files
-# Source: https://gist.github.com/rbochet/871983
+# From Source: https://gist.github.com/rbochet/871983
 
 *.aux
 *.glo
@@ -29,7 +29,8 @@
 *.out
 *.synctex.gz
 
-*.pdf
-
+# From Me
+*.fls
+*.fdb_latexmk
 # Mac finder files and hidden folders
 .DS_Store

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1643291323 "/Users/kittipos/Desktop/Misc/LaTeX/tutorial/intro/00-intro.tex" "00-intro.pdf" "00-intro" 1643291323
+["pdflatex"] 1643291829 "/Users/kittipos/Desktop/Misc/LaTeX/tutorial/intro/00-intro.tex" "00-intro.pdf" "00-intro" 1643291829
   "../image/octocat.png" 1640941101 111971 38fdb749043028cffb685f3f702552c6 ""
-  "/Users/kittipos/Desktop/Misc/LaTeX/tutorial/intro/00-intro.tex" 1643291323 734 dd624892b92989f0767c07cc0eb788b1 ""
+  "/Users/kittipos/Desktop/Misc/LaTeX/tutorial/intro/00-intro.tex" 1643291829 790 1a8d0d07cd96ba62d530723d52637ad5 ""
   "/Users/kittipos/Library/TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1136768653 1536 73da8e8f1d2a4c957d51ca133585586b ""
   "/Users/kittipos/Library/TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/Users/kittipos/Library/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -36,8 +36,8 @@
   "/Users/kittipos/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1632723258 11524 ce888087f89e30b5048f69a2a4c96e55 ""
   "/Users/kittipos/Library/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1642296813 1405550 6f5e42ad00089e1f0a0de03dc2202f3f ""
   "/Users/kittipos/Library/TinyTeX/texmf.cnf" 1632663993 685 b6d9e3e1e407dea430338b5a2833b69d ""
-  "00-intro.aux" 1643291323 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "00-intro.tex" 1643291323 734 dd624892b92989f0767c07cc0eb788b1 ""
+  "00-intro.aux" 1643291829 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "00-intro.tex" 1643291829 790 1a8d0d07cd96ba62d530723d52637ad5 ""
   (generated)
   "00-intro.aux"
   "00-intro.log"
