@@ -12,6 +12,7 @@ See `intro/`: combination of everything
 - `page-num/`: how page numbering works.
 - `caption-labs-ref/`: how to add caption & labels to image. 
 - `hyperlinks/`: Linking Stuff
+- `thai-minimal/`: contains minimal example to produce LaTeX in Thai 
 
 ### Reference
 
