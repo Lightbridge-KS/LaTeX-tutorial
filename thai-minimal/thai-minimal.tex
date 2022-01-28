@@ -45,6 +45,10 @@
     urlcolor={blue!80!black}
     }
 
+%% ---- Images ---- %%
+\usepackage{graphicx}
+\graphicspath{ {../image} }
+
 
 %% ==== Title, Auth, Date ==== %%
 \title{ภาษาไทย \LaTeX ~แบบมินิมอล \thanks{ขอบคุณ \href{https://github.com/mathmd/polygloTeX}{mathmd's Github repo} สำหรับ template}}
@@ -100,6 +104,10 @@ Some of the \textbf{greatest} discovery in the \textit{science} were made by \te
 \begin{itemize}
     \item ผลไม้
     \item ผัก
+    \begin{itemize}
+        \item ผักคะน้า
+        \item แครอท
+    \end{itemize}
 \end{itemize}
 
 \begin{enumerate}
@@ -112,9 +120,21 @@ Some of the \textbf{greatest} discovery in the \textit{science} were made by \te
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
+\section{รูปภาพ}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+    \caption{กราฟที่สวยงาม}
+    \label{fig:mesh1}
+\end{figure}
+ 
+จากที่เห็นในกราฟ \ref{fig:mesh1}, ฟังก์ชั่นมีค่าเพิ่มขึ้นช่วงใกล้ 0. และในหน้าที่ \pageref{fig:mesh1} 
+ก็เช่นกัน.
+
+
+
 \section{Links (การเชื่อมโยง)}
-
-
 \begin{itemize}
     \item \hyperlink{link1}{ลิงค์เข้า} in you document.
     \item a
@@ -125,6 +145,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     \item f
     \item \hypertarget{link1}{เป้าหมาย}.
 \end{itemize}
+
+
 
 
 \LaTeX{} \cite{book1} เป็นมาโครที่สร้างบน \TeX{} \cite{book2}.
